@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>我的个人主页</title>
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card: #1e293b;
+      --text: #e2e8f0;
+      --muted: #94a3b8;
+      --accent: #38bdf8;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC",
+        "Microsoft YaHei", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+      line-height: 1.6;
+    }
+
+    .card {
+      background: var(--card);
+      border-radius: 16px;
+      padding: 48px 40px;
+      max-width: 560px;
+      width: 100%;
+      text-align: center;
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
+    }
+
+    .avatar {
+      width: 96px;
+      height: 96px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--accent), #818cf8);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 40px;
+      font-weight: 700;
+      color: #0f172a;
+      margin: 0 auto 20px;
+    }
+
+    h1 {
+      font-size: 28px;
+      margin-bottom: 6px;
+    }
+
+    .title {
+      color: var(--accent);
+      font-weight: 600;
+      margin-bottom: 16px;
+    }
+
+    .bio {
+      color: var(--muted);
+      margin-bottom: 28px;
+    }
+
+    .links {
+      display: flex;
+      gap: 12px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .links a {
+      display: inline-block;
+      padding: 10px 20px;
+      border-radius: 999px;
+      background: rgba(56, 189, 248, 0.12);
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 500;
+      transition: transform 0.15s ease, background 0.15s ease;
+    }
+
+    .links a:hover {
+      background: rgba(56, 189, 248, 0.22);
+      transform: translateY(-2px);
+    }
+  </style>
+</head>
+<body>
+  <main class="card">
+    <div class="avatar">S</div>
+    <h1>你好，我是 SZQ</h1>
+    <p class="title">开发者 · 学习者</p>
+    <p class="bio">
+      欢迎来到我的个人主页。这里是我分享想法、项目和成长的地方。
+    </p>
+    <div class="links">
+      <a href="https://github.com/123456szq" target="_blank" rel="noopener">GitHub</a>
+      <a href="mailto:a19912169897@gamil.com">Email</a>
+    </div>
+  </main>
+</body>
+</html>
